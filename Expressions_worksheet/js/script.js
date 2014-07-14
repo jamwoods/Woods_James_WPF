@@ -12,3 +12,14 @@ console.log(dogYears);
 
 //alert("Sparky is" + " " +  (dogYears) + " " +  "year old in dog years"); //Alert showing final calculation with friendly verbiage.
 alert("Sparky is" + " " +  (humanYears) + " " +  "human years old which is" + " " +  (dogYears) + " " + "in dog years");
+
+//Slice of Pie part 1
+
+var pizzaSlice = 8;
+var peopleCount = 24;
+var pizzaCount = 10;
+
+var slicesPer = parseFloat(pizzaSlice*pizzaCount/peopleCount)
+console.log(slicesPer);
+
+
