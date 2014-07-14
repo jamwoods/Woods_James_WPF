@@ -22,4 +22,8 @@ var pizzaCount = 10;
 var slicesPer = parseFloat(pizzaSlice*pizzaCount/peopleCount)
 console.log(slicesPer);
 
+//SLice of Pie part 2-How many is Sparky going to get
+var sparkySlice = (slicesPer-3)* 24
+console.log(sparkySLice);
+
 
