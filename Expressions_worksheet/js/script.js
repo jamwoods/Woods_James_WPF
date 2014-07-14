@@ -26,6 +26,8 @@ var sparkySliceRound = parseInt(sparkySlice)
 console.log(sparkySliceRound);
 
 //Average shopping bill
-var shoppingBills=[80,65,110,89,76]
-var shoppingTotal=shoppingBills[0,1,2,3,4,5]
+var shoppingBills=[80,65,110,89,76];
+var shoppingTotal=shoppingBills[0] + shoppingBills[1] + shoppingBills[2] + shoppingBills[3] + shoppingBills[4];
 console.log(shoppingTotal);
+var shoppingAverage=shoppingTotal/5
+console.log(shoppingAverage);
