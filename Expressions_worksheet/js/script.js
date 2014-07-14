@@ -17,4 +17,4 @@ var humanYears = parseInt(agePrompt);
 var dogYears = humanYears * 7;
 console.log(dogYears);
 
-alert("Sparky is" + "" + (dogYears) + ""  + "years old");
+alert("Sparky is" + "" +  (dogYears) + "" +  "year old in dog years");
