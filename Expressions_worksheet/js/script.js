@@ -5,11 +5,11 @@
  */
 
 
-var HumanYears;
+var humanYears;
 HumanYears = 5;
-var DogYears;
-DogYears = (var HumanYears) * 7;
-console.log(var DogYears);
+var dogYears;
+DogYears = (var humanYears) * 7;
+console.log(var dogYears);
 
 
-alert(var DogYears)
+alert(var dogYears)
