@@ -10,7 +10,7 @@ var humanYears = parseInt(agePrompt); //Setting humanYears variable equal to val
 var dogYears = humanYears * 7; //Calculating dog years by multiplying value in humanYears by 7
 console.log(dogYears);
 
-//alert("Sparky is" + " " +  (dogYears) + " " +  "year old in dog years"); //Alert showing final calculation with friendly verbiage.
+//Alert showing final calculation with friendly verbiage.
 alert("Sparky is" + " " +  (humanYears) + " " +  "human years old which is" + " " +  (dogYears) + " " + "in dog years");
 
 //Slice of Pie part 1
@@ -31,3 +31,13 @@ var shoppingTotal=shoppingBills[0] + shoppingBills[1] + shoppingBills[2] + shopp
 console.log(shoppingTotal);
 var shoppingAverage=shoppingTotal/5 //Average of each shopping bill
 console.log(shoppingAverage);
+
+//Discounts
+var price = 120; //list price
+var discountPercent = 20; //discount percentage
+var product = "Super Cool Fancy Widget"; //Product name
+var tax = .0675
+var discountedPrice= price - price*.20;
+console.log(discountedPrice);
+var priceTax= parseFloat(price*tax + price);
+console.log(priceTax);
