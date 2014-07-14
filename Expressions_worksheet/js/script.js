@@ -41,3 +41,6 @@ var discountedPrice= price - price*.20;
 console.log(discountedPrice);
 var priceTax= parseFloat(price*tax + price);
 console.log(priceTax);
+var totalTotal= parseFloat(discountedPrice*tax + discountedPrice);
+
+alert("Your" + " " +  (product) + " " +  "was originally" + " " +  (price) + " " + "but after a" + " " + (discountPercent) + " " +  "% discount it is now" + " " + (discountedPrice) + " " + "without tax, and" + " " + (totalTotal) + " " + "with tax");
