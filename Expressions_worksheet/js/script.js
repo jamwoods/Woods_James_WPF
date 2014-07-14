@@ -14,16 +14,18 @@ console.log(dogYears);
 alert("Sparky is" + " " +  (humanYears) + " " +  "human years old which is" + " " +  (dogYears) + " " + "in dog years");
 
 //Slice of Pie part 1
-
 var pizzaSlice = 8;
 var peopleCount = 24;
 var pizzaCount = 10;
-
 var slicesPer = parseFloat(pizzaSlice*pizzaCount/peopleCount)
 console.log(slicesPer);
 
-//SLice of Pie part 2-How many is Sparky going to get
-var sparkySlice = (slicesPer-3)* 24
-console.log(sparkySLice);
+//SLice of Pie part 2-How many is Sparky going to get-count only whole pieces.
+var sparkySlice = (slicesPer-3) * 24;
+var sparkySliceRound = parseInt(sparkySlice)
+console.log(sparkySliceRound);
 
-
+//Average shopping bill
+var shoppingBills=[80,65,110,89,76]
+var shoppingTotal=shoppingBills[0,1,2,3,4,5]
+console.log(shoppingTotal);
