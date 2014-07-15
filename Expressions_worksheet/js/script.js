@@ -20,10 +20,15 @@ var pizzaCount = 10; //Total number of pizzas
 var slicesPer = parseFloat(pizzaSlice*pizzaCount/peopleCount) //Slices per person calculation using decimals
 console.log(slicesPer);
 
-//SLice of Pie part 2-How many is Sparky going to get-count only whole pieces.
+//Slice of Pie part 2-How many is Sparky going to get-count only whole pieces.
 var sparkySlice = (slicesPer-3) * 24; //Calculation of # of slices Sparky gets. This multiplies the remainder by the number of people.
-var sparkySliceRound = parseInt(sparkySlice) //This calculation removes te decimal. Rounded up.
+var sparkySliceRound = parseInt(sparkySlice) //This calculation removes the decimal. Rounded up.
 console.log(sparkySliceRound);
+
+/Alternative slice of pie part 2/
+
+var remainder = slicesPer % peopleCount;
+console.log(remainder);
 
 //Average shopping bill
 var shoppingBills=[80,65,110,89,76]; //An array of each weeks shopping bill.
