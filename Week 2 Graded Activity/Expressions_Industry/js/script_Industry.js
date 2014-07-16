@@ -4,9 +4,19 @@
  * Graded Assignment_Industry
  */
 
-//Sparkys age calculation.
-var agePrompt =  prompt("How old is Sparky in human years?","0"); //prompt box to gather human years from user
-var humanYears = parseInt(agePrompt); //Setting humanYears variable equal to value obtained from prompt box
+//Hours worked in a week
+alert ("Let's calculate the number of hours you will be working this week as a Corporate Trainer.");
+alert ("Your total hours are comprised of four primary tasks which are prep, travel, delivery and post training.");
+alert ("The two largest fluctuating variables will be travel destination and class duration");
+alert ("Classes run from 1 day to 5 days and travel will be either to the West Coast, Mid West or East Coast");
+
+var daysPrompt =  prompt("Please choose the number of days you will be training this week.","0"); //prompt box to gather human years from user
+var trainingDays = parseInt(daysPrompt); //Setting humanYears variable equal to value obtained from prompt box
+
+var locationPrompt =  prompt("Please input your destination as either West, MidWest or East"); //prompt box to gather human years from user
+var trainingDays = parseInt(daysPrompt); //Setting humanYears variable equal to value obtained from prompt box
+
+
 var dogYears = humanYears * 7; //Calculating dog years by multiplying value in humanYears by 7
 console.log(dogYears);
 
