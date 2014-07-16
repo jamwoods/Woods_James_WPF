@@ -13,10 +13,12 @@ alert ("Classes run from 1 day to 5 days and travel will be either to the West C
 var daysPrompt =  prompt("Please choose the number of days you will be training this week.","0"); //prompt box to gather human years from user
 var trainingDays = parseInt(daysPrompt); //Setting humanYears variable equal to value obtained from prompt box
 
-var locationPrompt =  prompt("Please input your destination as either West, MidWest or East"); //prompt box to gather human years from user
-var trainingDays = parseInt(daysPrompt); //Setting humanYears variable equal to value obtained from prompt box
+var locationPrompt =  prompt("Please input your destination as either W, MW or E","Select Location"); //prompt box to gather human years from user
+//var location = locationPrompt; //Setting humanYears variable equal to value obtained from prompt box
+console.log(locationPrompt);
 
 
+/*
 var dogYears = humanYears * 7; //Calculating dog years by multiplying value in humanYears by 7
 console.log(dogYears);
 
@@ -59,3 +61,4 @@ console.log(priceTax);
 var totalTotal= parseFloat(discountedPrice*tax + discountedPrice);
 
 alert("Your" + " " +  (product) + " " +  "was originally" + " " + "$"+(price) + " " + "but after a" + " " + (discountPercent)+"%" + " " +  "discount it is now" + " " + "$"+ (discountedPrice) + " " + "without tax, and" + " " + "$"+(totalTotal) + " " + "with tax");
+    */
