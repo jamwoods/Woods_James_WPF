@@ -1,21 +1,67 @@
 /**
  * Created by James Woods
- * Origination Date 7/16/14.
- * Graded Assignment_Industry
+ * Origination Date 7/17/14.
+ * Graded Assignment_Wacky
  */
 
 //Hours worked in a week
-//alert ("Let's calculate the number of hours you will be working this week as a Corporate Trainer.");
-//alert ("Your total hours are comprised of four primary tasks which are prep, travel, delivery and post training.");
+
+alert ("The rules. This is a space battle to the death. There are two offensive weapons, lasers and missiles. There are two defensive weapons, shields and anti-missile mini-guns. Lasers tear down shields, shields repel missiles.The object of the game is to destroy the other ship.");
+
+
+var initiativePrompt =  prompt("You are being approached by an enemy Dreadnaught. You can either attack first or defend yourself.","Do you A (ATTACK) or D  DEFEND?"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var initiative = initiativePrompt.toUpperCase();
+console.log(initiativePrompt);
+
+var weaponPrompt =  prompt("Which asset did you deploy? Attack = L(LASER) or M (MISSILE). Defend = S (SHIELD) or AMM (ANTI-MISSILE MINIGUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+console.log(weaponPrompt);
+
+var battle=[initiativePrompt,weaponPrompt]
+console.log(battle);
+
+alert ("Did the enemy decide to attack or defend? 1=attack, 2= defend");
+alert ("Which asset did they use? 1=attack, 2= defend");
+
+alert ("What did the enemy decide to do?");
+
+alert(Math.floor(Math.random()*3))
+
+var enemyRoll1=
+
+//var battle=[initiativePrompt,weaponPrompt]
+console.log(battle);
+
+//have the array tell them the moves
+
+//alert ("You are being approach by an enemy dreadnaught. You can either attack first or defend yourself. Enter 1 for attach or 2 for defend. attack by ***** dreadnaught. ");
+//alert ("Roll for initiative. A  ");
 //alert ("The two largest fluctuating variables will be travel destination and class duration. Preparation time will be a factor as well but we will consider post training as a constant.");
 //alert ("Classes run from 1 day to 5 days and travel will be either to the West Coast, Mid West or East Coast");
 
-alert(Math.floor(Math.random()*11))
-alert(Math.floor(Math.random()*11))
-alert(Math.floor(Math.random()*11))
+/*
+var familyGuyPrompt =  prompt("Who is your favorite Family Guy Character?", "enter character here"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var familyGuy = locationPrompt.toLowerCase();//Forcing to upper case to avoid user input variance.
+console.log(familyGuy);
 
-var randomNumber1=Math.floor(Math.random()*11)
-console.log(randomNumber1)
+var familyGuyPrompt =  prompt("Who is your favorite Family Guy Character?", "enter character here"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var familyGuy = locationPrompt.toLowerCase();//Forcing to upper case to avoid user input variance.
+console.log(familyGuy);
+
+var familyGuyPrompt =  prompt("Who is your favorite Family Guy Character?", "enter character here"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var familyGuy = locationPrompt.toLowerCase();//Forcing to upper case to avoid user input variance.
+console.log(familyGuy);
+*/
+
+
+
+//alert(Math.floor(Math.random()*11))
+//alert(Math.floor(Math.random()*11))
+//alert(Math.floor(Math.random()*11))
+
+//var randomNumber1=Math.floor(Math.random()*11)
+//console.log(randomNumber1)
+
+
 //var randomnumber2
 //var randomnumber3
 
