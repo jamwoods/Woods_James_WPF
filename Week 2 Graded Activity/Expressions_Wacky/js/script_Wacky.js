@@ -49,7 +49,7 @@ if (rand_no2 == "2") //If the random # is 2 a Missile is fired
 
 if (firstMove == "ALIEN Defend") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
 {var rand_no2 = Math.random();
-    rand_no2 = rand_no2 * 2 + 2 ;//Needed to add the + 2 to move the random roll out by two. It seems to be working
+    rand_no2 = rand_no2 * 2 + 2 ;//Needed to add the + 2 to move the random roll out by two.
     rand_no2 = Math.ceil(rand_no2);
 console.log(rand_no2);}
 
