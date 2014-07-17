@@ -8,11 +8,11 @@
 
 //alert ("You are being approach by an enemy Dreadnaught. You can either attack first or defend yourself. Enter 1 for attack or 2 for defend.");
 
-var initiativePrompt =  prompt("You are being approached by an enemy Dreadnaught. You can either attack first or defend yourself.","Attack = 1 or Defend = 2"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var initiativePrompt =  prompt("You are being approached by an enemy Dreadnaught. You can either attack first or defend yourself.","Attack  or Defend"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
 var initiative = initiativePrompt.toUpperCase();
 console.log(initiativePrompt);
 
-var weaponPrompt =  prompt("Which asset did you deploy? Laser = 1 Missile = 2   Shield = 3  AMM (ANTI-MISSILE MINI-GUN) = 4"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var weaponPrompt =  prompt("Which asset did you deploy? Laser, Missile Shield or  AMM (ANTI-MISSILE MINI-GUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
 console.log(weaponPrompt);
 //alert ("Roll for initiative. A  ");
 
@@ -27,35 +27,56 @@ if (rand_no1 == "1") //The ability to input a letter is a convenience afforded t
 {var firstMove = "ATTACK";} //2 hours transit
 if (rand_no1 == "2")
 {var firstMove = "Defend";} //4 hours transit
+console.log(rand_no1);
 alert (firstMove)
-console.log(firstMove);
 
-if (rand_no1 == "1") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var firstMove = "ATTACK";} //2 hours transit
-if (rand_no1 == "2")
-{var firstMove = "Defend";} //4 hours transit
-alert (firstMove)
-console.log(firstMove);
-
-var rand_no2 = Math.random();
-rand_no2 = rand_no2 * 4;
-rand_no2 = Math.ceil(rand_no1);
-alert(rand_no2);
+if (firstMove = "ATTACK") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+{var rand_no2 = Math.random();
+    rand_no2 = rand_no2 * 2;
+    rand_no2 = Math.ceil(rand_no2);
+console.log(rand_no2);}
 
 if (rand_no2 == "1") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
 {var secondMove = "LASER";} //2 hours transit
-if (rand_no2 == "2")
-{var secondMove = "MISSLE";} //4 hours transit
-console.log(firstMove);
+alert (secondMove)
+
+if (rand_no2 == "2") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+{var secondMove = "MISSILE";} //2 hours transit
+alert (secondMove)
+
+var battle=[initiativePrompt,firstMove,weaponPrompt,secondMove]
+
+
+alert ("Battle Results:" + " " + battle.toString());
+
+/*
+if (firstMove = "DEFEND") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+{var rand_no2 = Math.random();
+    rand_no2 = rand_no2 * 2 + 1 ;
+    rand_no2 = Math.ceil(rand_no2);
+    console.log(rand_no2);}
+
 if (rand_no2 == "3") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
 {var secondMove = "SHIELD";} //2 hours transit
-if (rand_no2 == "4")
-{var secondMove = "AMM";} //4 hours transit
-console.log(firstMove);
+alert (secondMove)
 
-/*alert ("The rules. This is a space battle to the death. There are two offensive weapons, lasers and missiles. There are two defensive weapons, shields and anti-missile mini-guns. Lasers tear down shields, shields repel missiles.The object of the game is to destroy the other ship.");
+if (rand_no2 == "4") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+{var secondMove = "AMM";} //2 hours transit
+alert (secondMove)
+
+//if (firstMove = "DEFEND") /q/The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+//{var rand_no2 = Math.random();
+  //  rand_no2 = rand_no2 * 3-4;
+    //rand_no2 = Math.ceil(rand_no2);
+    //console.log(rand_no2);}
 
 
+
+/*
+
+//*alert ("The rules. This is a space battle to the death. There are two offensive weapons, lasers and missiles. There are two defensive weapons, shields and anti-missile mini-guns. Lasers tear down shields, shields repel missiles.The object of the game is to destroy the other ship.");
+
+/*
 var initiativePrompt =  prompt("You are being approached by an enemy Dreadnaught. You can either attack first or defend yourself.","Do you A (ATTACK) or D  DEFEND?"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
 var initiative = initiativePrompt.toUpperCase();
 console.log(initiativePrompt);
@@ -66,26 +87,10 @@ console.log(weaponPrompt);
 var battle=[initiativePrompt,weaponPrompt]
 console.log(battle);
 
-//alert ("Did the enemy decide to attack or defend? 1=attack, 2= defend");
-//alert ("Which asset did they use? 1=attack, 2= defend");
-
-//alert ("What did the enemy decide to do?");
-
-//alert(Math.floor(Math.random()*3))
-//var enemyMoveOne =
-
-//var enemyRoll1=
-
 //var battle=[initiativePrompt,weaponPrompt]
 console.log(battle);
 
 //have the array tell them the moves
-
-
-
-//alert(Math.floor(Math.random()*11))
-//alert(Math.floor(Math.random()*11))
-//alert(Math.floor(Math.random()*11))
 
 //var randomNumber1=Math.floor(Math.random()*11)
 //console.log(randomNumber1)
@@ -131,5 +136,4 @@ console.log(prepTime);
 
 
 alert("Your total working hours for this week include" + " " +  (totalDeliveryHours) + " " +  "delivery hours," + " " + (locationTime) + " " + "travel hours," + " " + (prepTime) + " " +  "preparation hours, and finally" + " " + "one hour of post training work for a grand total of" + " " + (Number(totalDeliveryHours)+Number(locationTime)+Number(prepTime)+1) + " " + "hours");
-
-*/
+****/
