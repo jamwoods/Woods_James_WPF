@@ -4,50 +4,50 @@
  * Graded Assignment_Wacky
  */
 
-//Hours worked in a week
+//Scenerio
 
-//alert ("You are being approach by an enemy Dreadnaught. You can either attack first or defend yourself. Enter 1 for attack or 2 for defend.");
+alert ("The rules. This is a space battle to the death. There are two offensive weapons, lasers and missiles. There are two defensive weapons, shields and anti-missile mini-guns.")
 
+//Player gets first move
 var initiativePrompt =  prompt("You are being approached by an enemy Dreadnaught. You can either attack first or defend yourself.","Attack  or Defend"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
 var initiative = initiativePrompt.toUpperCase();
 console.log(initiativePrompt);
 
-var weaponPrompt =  prompt("Which asset did you deploy? Laser, Missile Shield or  AMM (ANTI-MISSILE MINI-GUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+//Player chooses asset
+var weaponPrompt =  prompt("Which asset did you deploy? Laser, Missile, Shield or AMM (ANTI-MISSILE MINI-GUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
 console.log(weaponPrompt);
-//alert ("Roll for initiative. A  ");
 
 alert ("What did the enemy do?")
 
-var rand_no1 = Math.random();
+var rand_no1 = Math.random(); //Random # generator to decide computers attack or defense stance
 rand_no1 = rand_no1 * 2;
 rand_no1 = Math.ceil(rand_no1);
 
 
-if (rand_no1 == "1") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var firstMove = "ATTACK";} //2 hours transit
+if (rand_no1 == "1") //Need to translate the random # of the computer into their move choice
+{var firstMove = "ATTACK";}
 if (rand_no1 == "2")
-{var firstMove = "Defend";} //4 hours transit
+{var firstMove = "Defend";}
 console.log(rand_no1);
 alert (firstMove)
 
-if (firstMove = "ATTACK") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+if (firstMove = "ATTACK") //If the computer attacks which weapon will it use? Another random roll
 {var rand_no2 = Math.random();
     rand_no2 = rand_no2 * 2;
     rand_no2 = Math.ceil(rand_no2);
 console.log(rand_no2);}
 
-if (rand_no2 == "1") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var secondMove = "LASER";} //2 hours transit
+if (rand_no2 == "1") //If the random # is 1 a laser is fired
+{var secondMove = "LASER";}
 alert (secondMove)
 
-if (rand_no2 == "2") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var secondMove = "MISSILE";} //2 hours transit
+if (rand_no2 == "2") //If the random # is 2 a Missile is fired
+{var secondMove = "MISSILE";}
 alert (secondMove)
 
-var battle=[initiativePrompt,firstMove,weaponPrompt,secondMove]
+var battle=[initiativePrompt,firstMove,weaponPrompt,secondMove]//Collect all choice for battle report using array
 
-
-alert ("Battle Results:" + " " + battle.toString());
+alert ("Battle Results:" + " " + battle.toString());// battle report
 
 /*
 if (firstMove = "DEFEND") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
