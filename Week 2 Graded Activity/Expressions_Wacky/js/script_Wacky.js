@@ -5,10 +5,27 @@
  */
 
 //Hours worked in a week
-alert ("Let's calculate the number of hours you will be working this week as a Corporate Trainer.");
-alert ("Your total hours are comprised of four primary tasks which are prep, travel, delivery and post training.");
-alert ("The two largest fluctuating variables will be travel destination and class duration. Preparation time will be a factor as well but we will consider post training as a constant.");
-alert ("Classes run from 1 day to 5 days and travel will be either to the West Coast, Mid West or East Coast");
+//alert ("Let's calculate the number of hours you will be working this week as a Corporate Trainer.");
+//alert ("Your total hours are comprised of four primary tasks which are prep, travel, delivery and post training.");
+//alert ("The two largest fluctuating variables will be travel destination and class duration. Preparation time will be a factor as well but we will consider post training as a constant.");
+//alert ("Classes run from 1 day to 5 days and travel will be either to the West Coast, Mid West or East Coast");
+
+alert(Math.floor(Math.random()*11))
+alert(Math.floor(Math.random()*11))
+alert(Math.floor(Math.random()*11))
+
+var randomNumber1=Math.floor(Math.random()*11)
+console.log(randomNumber1)
+//var randomnumber2
+//var randomnumber3
+
+//var randomnumberPrompt1 = prompt(Math.floor(Math.random()*11));
+
+//var randomnumberPrompt2 = prompt(Math.floor(Math.random()*11));
+
+//var randomnumberPrompt3 = prompt(Math.floor(Math.random()*11));
+
+/*
 
 var daysPrompt =  prompt("Please choose the number of days you will be training this week.","0"); //User selects class delivery length
 var trainingDays = parseInt(daysPrompt); //Return user selection as a number
@@ -43,3 +60,4 @@ console.log(prepTime);
 
 alert("Your total working hours for this week include" + " " +  (totalDeliveryHours) + " " +  "delivery hours," + " " + (locationTime) + " " + "travel hours," + " " + (prepTime) + " " +  "preparation hours, and finally" + " " + "one hour of post training work for a grand total of" + " " + (Number(totalDeliveryHours)+Number(locationTime)+Number(prepTime)+1) + " " + "hours");
 
+*/
