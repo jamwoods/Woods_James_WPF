@@ -14,9 +14,13 @@ var daysPrompt =  prompt("Please choose the number of days you will be training 
 var trainingDays = parseInt(daysPrompt); //Setting humanYears variable equal to value obtained from prompt box
 
 var locationPrompt =  prompt("Please input your destination as either W, MW or E","Select Location"); //prompt box to gather human years from user
-//var location = locationPrompt; //Setting humanYears variable equal to value obtained from prompt box
-console.log(locationPrompt);
+var locationCase = locationPrompt.toUpperCase();
+console.log(locationCase);
 
+alert ("How prepared are you for class? We will factor in the number of times you have taught the class in order to determine prep time");
+var classExp =  prompt("Please enter the number of times you have taught this class.","0"); //prompt box to
+var prepHours = parseInt(classExp); //Setting humanYears variable equal to value obtained from prompt box
+console.log(prepHours);
 
 /*
 var dogYears = humanYears * 7; //Calculating dog years by multiplying value in humanYears by 7
