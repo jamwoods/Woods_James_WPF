@@ -1,51 +1,60 @@
 /**
  * Created by James Woods
  * Origination Date 7/16/14.
- * Graded Assignment_Expressions_Personal
+ * Week 2 Graded Assignment_Personal
  */
 
-//Sparkys age calculation.
-var agePrompt =  prompt("How old is Sparky in human years?","0"); //prompt box to gather human years from user
-var humanYears = parseInt(agePrompt); //Setting humanYears variable equal to value obtained from prompt box
-var dogYears = humanYears * 7; //Calculating dog years by multiplying value in humanYears by 7
-console.log(dogYears);
 
-//Alert showing final calculation with friendly verbiage.
-alert("Sparky is" + " " +  (humanYears) + " " +  "human years old which is" + " " +  (dogYears) + " " + "in dog years");
+alert ("How much are you really spending on gas a year?");
 
-//Slice of Pie part 1
-var pizzaSlice = 8; //Slices per pizza
-var peopleCount = 24; //Total people at the party
-var pizzaCount = 10; //Total number of pizzas
-var slicesPer = parseFloat(pizzaSlice*pizzaCount/peopleCount) //Slices per person calculation using decimals
-console.log(slicesPer);
+//Gas mileage
+var mpgPrompt =  prompt("Please enter your cars gas mileage.","0"); //User inputs gas mileage
+var mpg = parseInt(mpgPrompt); //Return user selection as a number
 
-//Slice of Pie part 2-How many is Sparky going to get-count only whole pieces.
-var sparkySlice = (slicesPer-3) * 24; //Calculation of # of slices Sparky gets. This multiplies the remainder by the number of people.
-var sparkySliceRound = parseInt(sparkySlice) //This calculation removes the decimal. Rounded up.
-console.log(sparkySliceRound);
+//Miles to work
+var mtwPrompt =  prompt("How many miles away is your office?","0"); //User inputs distance from home to office
+var mtw = parseInt(mtwPrompt); //Return user selection as a number
+var roundTripYearMTW = mtwPrompt * 2 * 52//Total miles to and from work for the year
+console.log(roundTripMTW);
 
-/Alternative slice of pie part 2/
+var vacationPrompt =  prompt("Please enter the number of weeks vacation you will be taking this year.","0"); //User inputs vacation weeks
+var vacation = parseInt(vacationPrompt); //Return user selection as a number
 
-var remainder = slicesPer % peopleCount;
-console.log(remainder);
+var vacationMilesPrompt =  prompt("How many miles will you drive during your vacation?.","0"); //User inputs vacation weeks
+var vacationMiles = parseInt(vacationMilesPrompt); //Return user selection as a number
 
-//Average shopping bill
-var shoppingBills=[80,65,110,89,76]; //An array of each weeks shopping bill.
-var shoppingTotal=shoppingBills[0] + shoppingBills[1] + shoppingBills[2] + shoppingBills[3] + shoppingBills[4]; //Total spent
-console.log(shoppingTotal);
-var shoppingAverage=shoppingTotal/5 //Average of each shopping bill
-console.log(shoppingAverage);
+var weekendMilesPrompt =  prompt("How many miles do you average on the weekend?.","0"); //User inputs vacation weeks
+var weekendMiles = parseInt(weekendMilesPrompt); //Return user selection as a number
 
-//Discounts
-var price = 120; //list price
-var discountPercent = 20; //discount percentage
-var product = "Super Cool Fancy Widget"; //Product name
-var tax = .0675
-var discountedPrice= price - price*.20;
-console.log(discountedPrice);
-var priceTax= parseFloat(price*tax + price);
-console.log(priceTax);
-var totalTotal= parseFloat(discountedPrice*tax + discountedPrice);
 
-alert("Your" + " " +  (product) + " " +  "was originally" + " " + "$"+(price) + " " + "but after a" + " " + (discountPercent)+"%" + " " +  "discount it is now" + " " + "$"+ (discountedPrice) + " " + "without tax, and" + " " + "$"+(totalTotal) + " " + "with tax");
+var totalDeliveryHours = trainingDays * 8 //Calculate working hours at 8 hour per deliver day
+console.log(totalDeliveryHours);
+
+var locationPrompt =  prompt("Please input your destination as either W, MW or E","Select Location"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
+var locationCase = locationPrompt.toUpperCase();//Forcing to upper case to avoid user input variance.
+console.log(locationCase);
+if (locationCase == "W") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
+{var locationTime = 2;} //2 hours transit
+if (locationCase == "MW")
+{var locationTime = 4;} //4 hours transit
+if (locationCase == "E")
+{var locationTime = 6;} //6 hours transit
+console.log(locationTime);
+
+
+alert ("How prepared are you for class? We will factor in the number of times you have taught the class in order to determine prep time");
+var classExp =  prompt("Please enter the number of times you have taught this class.","0"); //Prompt box to to collect experience level
+var prep = parseInt(classExp); //Insure classExp is recognized as a number and deposited in the prep variable
+console.log(prep);
+
+if (prep >= 0 && prep <= 3) //Assign a user selection to one of three categories, each of which imply there own prep time. This is the never to 3 times
+{var prepTime = 8;}
+if (prep >= 4 && prep <= 8)// The 4 to 8
+{var prepTime = 4;}
+if (prep >= 9) //The greater than 9
+{var prepTime = 1;}
+console.log(prepTime);
+
+
+alert("Your total working hours for this week include" + " " +  (totalDeliveryHours) + " " +  "delivery hours," + " " + (locationTime) + " " + "travel hours," + " " + (prepTime) + " " +  "preparation hours, and finally" + " " + "one hour of post training work for a grand total of" + " " + (Number(totalDeliveryHours)+Number(locationTime)+Number(prepTime)+1) + " " + "hours");
+
