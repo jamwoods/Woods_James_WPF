@@ -15,18 +15,18 @@ console.log(initiative);
 
 //Player chooses asset
 var weaponPrompt =  prompt("Which asset did you deploy? Laser, Missile, Shield or AMM (ANTI-MISSILE MINI-GUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
-console.log(weaponPrompt);
+console.log(weaponPrompt); //A more robust deployment would force values. Right now this is a free text field and could result in all manner of entries
 
 //Aliens Turn
 
 alert ("What did the enemy do?")
 
-var rand_no1 = Math.random(); //Random # generator to decide computers attack or defense stance
+var rand_no1 = Math.random(); //Random # generator to decide computers attack or defense stance. Two possible choices, 1 or 2
 rand_no1 = rand_no1 * 2;
 rand_no1 = Math.ceil(rand_no1);
 
 
-if (rand_no1 == "1") //Need to translate the random # of the computer into their move choice
+if (rand_no1 == "1") //Need to translate the random # of the computer into their move choice. Two options, attack or defend.
 {var firstMove = "ALIEN Attack";}
 if (rand_no1 == "2")
 {var firstMove = "ALIEN Defend";}
