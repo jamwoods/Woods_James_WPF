@@ -38,7 +38,7 @@ var weekendMiles = parseInt(weekendMilesPrompt); //Return user selection as a nu
 console.log(weekendMiles);
 
 //Total miles
-var totalMiles= trueMTW + vacationMiles + weekendMiles
+var totalMiles= trueMTW + vacationMiles + weekendMiles //Total calculation composed of true miles + vacation miles plus weekend miles
 console.log(totalMiles);
 
 //Current price per gallon
