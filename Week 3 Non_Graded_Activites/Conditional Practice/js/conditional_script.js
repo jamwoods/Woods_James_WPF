@@ -14,3 +14,14 @@ if (temp>70) {goToTheBeach();
 var temp = 82;//In this scenario, you are trying to compare values and look for an exact match
 if (temp==70) {goToTheBeach();
 }
+
+//Nested Conditional
+
+if (sunny){
+    goToTheBeach();
+if (warmWater){
+    wearNewSuit();
+}
+
+}else{goToTheMovies();
+}
