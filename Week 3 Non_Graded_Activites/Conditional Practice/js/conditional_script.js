@@ -19,9 +19,20 @@ if (temp==70) {goToTheBeach();
 
 if (sunny){
     goToTheBeach();
-if (warmWater){
+
+    if (warmWater){
     wearNewSuit();
 }
 
-}else{goToTheMovies();
+}else{
+    {
+        goToTheMovies();
+    }
+
+var oldEnough=true;
+
+//if the child is old enough, print to the console, "You can ride!"
+if(oldEnough){
+    //code to be performed if condition is true
+    console.log("You can ride the coaster!");
 }
