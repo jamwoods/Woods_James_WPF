@@ -130,9 +130,51 @@ if(iPhonePrice < budget || wonLottery) {//and operators only goes between Boolea
 //to true. You end up saying true = c. In case of the latter, if both are true the whole thing is true.
 //Relational operators go in between pairs of objects
 //Logical operators go in between Relational Expressions or Boolean values
-//Always work in pairs
+//Always work in pairs, never three items at once
+
+//Ternary operators-one line if else statement that requires 3 components
+
+/*if(condition){
+    do if true;
+}else{
+    do if false;
+}
+
+//OR
+
+(condition) ? do if true : do if false;
 
 
+var gpa = 4.8;
+if(gpa>2.0) {
+    console.log("Congrats");
+}else{
+    console.log("Congrats");
+}*/
+
+//OR you could use a ternary
+
+(gpa > 2.0) ? console.log("Congrats") : console.log("So sorry Charlie")
+
+//Real benefit is its ability to return values
+
+var age = 11;
+var book;
+
+//If child under 10 they get book A otherwise they get B
+
+if(age<10){
+    book="A";
+}else{
+    book = "B";
+}
+
+console.log(book);
+
+//Using Ternary-It is really a choice to use ternary's or conditionals. Really large blocks of codes are better suited for traditional conditionals
+
+book = (age<10) ? "A" : "B"
+console.log(book);
 
 
 
