@@ -41,12 +41,40 @@ if(oldEnough){
 
 var kidHeight = 30;
 var minHeight= 48;
-    
+
 //If over 48"
 if (kidHeight>minHeight){
 }
 
 
 console.log("You can ride the coaster!");
+
+    if (kidHeight +2 > minHeight){//sneaker lift. Can also declare a variable value and add the two variables together
+
+    }
+
+    var kidHeight = 30;
+    var minHeight= 48;
+    var sneakerLift=2;
+
+    if (kidHeight + sneakerLift > minHeight){//sneaker lift. Can also declare a variable value and add the two variables together
+    }
+//if and else
+
+    var kidHeight = 30;
+    var minHeight= 48;
+
+//If under 48"
+    if (kidHeight<minHeight){
+    }
+    console.log("Need to put on a few inches")
+//But what if neither condition is met? Use the less than or equal to operator
+    if (kidHeight<=minHeight){
+    }
+//Alternative method that combines both with an else
+
+if (kidHeight>minHeight){
+}else}
+    console.log("Need to put on a few inches")
 
 
