@@ -36,3 +36,17 @@ if(oldEnough){
     //code to be performed if condition is true
     console.log("You can ride the coaster!");
 }
+
+//Relational Expressions-Check the relationship between 2 variables or values
+
+var kidHeight = 30;
+var minHeight= 48;
+    
+//If over 48"
+if (kidHeight>minHeight){
+}
+
+
+console.log("You can ride the coaster!");
+
+
