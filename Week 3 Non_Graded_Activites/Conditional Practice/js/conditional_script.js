@@ -92,5 +92,49 @@ if (kidHeight>minHeight){
     console.log("Need o grow a little");
 }
 
+//Logical operators
+
+//&& and requires that both boolean values be true
+
+var budget = 300
+var iPhonePrice = 199.99
+var paycheck = 200;
+var wonLottery = true;
+
+if(iPhonePrice < budget && paycheck > 300 ) {//and operators only goes between Booleans
+    console.log("We can buy the phone")
+}else{
+    console.log("We can buy the phone")
+
+}
+
+//Or operator ||
+
+var budget = 100
+var iPhonePrice = 199.99
+var paycheck = 200;
+var wonLottery = true;
+
+if(iPhonePrice < budget || wonLottery) {//and operators only goes between Booleans
+    console.log("We can buy the phone")
+}else{
+    console.log("We can buy the phone")
+
+}
+//Exclusive OR Xor. Only one of those things can be true.Either on but not both. If both are true it resolved to false
+//Not Operator-Negation-true becomes false, false becomes true
+//a!=b same as !(a===b)
+//a<b is the same as !(a<b)
+//COMMON MISCONCEPTIONS
+//a===b===c is not correct for equality. Should be a===b && b===c. This is because the first expression if the wrong example resolves
+//to true. You end up saying true = c. In case of the latter, if both are true the whole thing is true.
+//Relational operators go in between pairs of objects
+//Logical operators go in between Relational Expressions or Boolean values
+//Always work in pairs
+
+
+
+
+
 
 
