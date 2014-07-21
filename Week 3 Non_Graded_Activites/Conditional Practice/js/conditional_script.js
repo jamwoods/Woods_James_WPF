@@ -74,7 +74,23 @@ console.log("You can ride the coaster!");
 //Alternative method that combines both with an else
 
 if (kidHeight>minHeight){
-}else}
-    console.log("Need to put on a few inches")
+}else}//removes the need for another relational operator
+    console.log("Need to put on a few inches");
+}
+
+//else if chain. Choosing between three blocks of code
+
+var kidHeight = 52;
+var minHeight= 48;
+var wParentHeight=45;
+
+if (kidHeight>minHeight){
+    console.log("Hit the ride");
+}else if(kidHeight>wParentHeight) {
+    console.log("You can ride with a parent");
+}else{
+    console.log("Need o grow a little");
+}
+
 
 
