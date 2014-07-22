@@ -4,32 +4,20 @@
  * Week 3 Conditional Worksheet
  */
 
-//Conditional Comparison Statement with Temp
+//Username and Password check
 
-/*Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that
-should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
 
-    Given:
-Username entered by user
-Password entered by user
-Correct username
-Correct password
-Result To Print Out:
-    “Welcome, (place their username here)!”  - if the username and password is correct
-“User not found. Try again.” -if the username does not match
-“Password does not match our records.”  -if the username matches but the password does not*/
-
-var userName = prompt("Username");
+var userName = prompt("Username");//prompt to collect Username
 console.log(userName);
 
-var passWord = prompt("Password");
+var passWord = prompt("Password");////prompt to collect Username
 console.log(passWord);
 
-if(userName!=="BossHog") {
+if(userName!=="BossHog") {//Set alert if username is not recognized
     alert("User not found, try again");
-}else if(userName=="BossHog" && passWord!=="RoscoPicoTrain") {
+}else if(userName=="BossHog" && passWord!=="RoscoPicoTrain") {//Set alert if username is recognized but password is incorrect
     alert("Password does not match our records");
-}else{
+}else{//Set welcome message containing to greet username when both username and password match
     alert("Welcome" + " " + userName);
 }
 
