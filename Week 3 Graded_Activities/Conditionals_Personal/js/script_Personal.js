@@ -27,17 +27,40 @@ var drinkBill=parseInt(estDrinkBill)
 
 var estDinnerBill= parseInt(appBill+foodBill+drinkBill);
 console.log(estDinnerBill);
-/*
 
-if (estDinnerBill<dailyBudget){
+
+var loopCounter
+
+for (loopCounter=estDinnerBill; loopCounter >100; loopCounter-=7)
+    console.log(loopCounter);
+
+
+/*if (estDinnerBill<=dailyBudget){
     alert("Bon Appetite and Cheers");
 }else if(estDinnerBill>dailyBudget) {
-    alert("Bon Appetite and Cheers");
+ var updatedDinnerBill= estDinnerBill-appBill
+    console.log(updatedDinnerBill);
+ alert("Time to make some sacrifices");
+}else if(updatedDinnerBill>dailyBudget) {
+    var updatedDinnerBillTwo= updatedDinnerBill-drinkBill
+    console.log(updatedDinnerBillTwo);
+ }
+
+/*
 }else{
     console.log("Need o grow a little");
-}
-if (qualityPrompt === ""){
-    qualityPrompt = prompt("What is your overall quality score for the quarter? Do not leave blank.","0");//Re-prompting if no value is entered
+
+ if (estDinnerBill<=dailyBudget){
+ alert("Bon Appetite and Cheers");
+ }else if(estDinnerBill>dailyBudget) {
+
+
+
+ }else{
+ console.log("Need o grow a little");
+
+
+
 }
 alert("Your yearly cost for gas consists of" + " " +  "$" + (trueMTW/mpg * pricePerGallon).toFixed(2) + " " +  "for your work commute," + " " + "$" + (vacationMiles/mpg* pricePerGallon).toFixed(2) + " " + "for your vacation commute and" + " " + "$" + (weekendMiles/mpg * pricePerGallon).toFixed(2) + " " +  "for you weekend miles for a total yearly cost of" + " " + "$" + (totalYearlyCost));
 
