@@ -1,7 +1,7 @@
 /**
  * Created by James Woods
  * Origination Date 7/16/14.
- * Week 2 Graded Assignment_Personal
+ * Week 3 Graded Assignment_Conditionals_Personal
  */
 
 
