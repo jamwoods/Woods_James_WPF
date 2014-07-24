@@ -5,33 +5,34 @@
  */
 
 
-var estDinnerBill = prompt("How much money are you going to drop at dinner if you get everything you want?")
-console.log("estDinnerBill")
+var dailyBudget = 100
 
-if (estDinnerBill === ""){
-    estDinnerBill = prompt("How much money are you going to drop at dinner if you get everything you want? Please provide and answer.");//Re-prompting if no value is entered
+var estAppBill = prompt("How much money are you going to drop on appetizers tonight?")
+if (estAppBill === ""){
+    estAppBill = prompt("How much money are you going to drop on appetizers tonight? Please provide and answer.");//Re-prompting if no value is entered
 }
-var dailyBudget = prompt("What is your daily budget?")
-if (dailyBudget === ""){
-    dailyBudget = prompt("What is your daily budget? Please provide and answer.");//Re-prompting if no value is entered
+var appBill=parseInt(estAppBill)
+
+var estFoodBill = prompt("How much money are you going to drop on food tonight?")
+if (estFoodBill === ""){
+    estFoodBill = prompt("How much money are you going to drop on food tonight? Please provide an answer.")
 }
-var drinkCost = prompt("How much are drinks running?")
-if (drinkCost === ""){
-    drinkCost = prompt("How much are drinks running?" Please provide and answer.");//Re-prompting if no value is entered
+var foodBill=parseInt(estFoodBill)
+
+var estDrinkBill = prompt("How much money are you going to drop on drinks?")
+if (estDrinkBill === ""){
+    estDrinkBill = prompt("How much money are you going to drop on drink? Please provide an answer.")
 }
-var appOrder = prompt("Were you going to order an appetizer?")
-if (appOrder === ""){
-    appOrder = prompt("Were you going to order an appetizer?" Please provide and answer.");//Re-prompting if no value is entered
-}
+var drinkBill=parseInt(estDrinkBill)
+
+var estDinnerBill= parseInt(appBill+foodBill+drinkBill);
+console.log(estDinnerBill);
 /*
-var dinnerBill = 52;
-var minHeight= 48;
-var wParentHeight=45;
 
-if (dinnerBill>dailyBudget){
-    alert("Hit the ride");
-}else if(kidHeight>wParentHeight) {
-    console.log("You can ride with a parent");
+if (estDinnerBill<dailyBudget){
+    alert("Bon Appetite and Cheers");
+}else if(estDinnerBill>dailyBudget) {
+    alert("Bon Appetite and Cheers");
 }else{
     console.log("Need o grow a little");
 }
