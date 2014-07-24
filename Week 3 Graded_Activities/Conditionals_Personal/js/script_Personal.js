@@ -7,21 +7,21 @@
 
 var dailyBudget = 100
 
-var estAppBill = prompt("How much money are you going to drop on appetizers tonight?")
+var estAppBill = prompt("How much money are your desired apps going to cost?")
 if (estAppBill === ""){
-    estAppBill = prompt("How much money are you going to drop on appetizers tonight? Please provide and answer.");//Re-prompting if no value is entered
+    estAppBill = prompt("How much money are your desired apps going to cost? Please provide and answer.");//Re-prompting if no value is entered
 }
 var appBill=parseInt(estAppBill)
 
-var estFoodBill = prompt("How much money are you going to drop on food tonight?")
+var estFoodBill = prompt("How much money is you desired main course?")
 if (estFoodBill === ""){
-    estFoodBill = prompt("How much money are you going to drop on food tonight? Please provide an answer.")
+    estFoodBill = prompt("How much money is you desired main course? Please provide an answer.")
 }
 var foodBill=parseInt(estFoodBill)
 
-var estDrinkBill = prompt("How much money are you going to drop on drinks?")
+var estDrinkBill = prompt("How much money is you desired main course?")
 if (estDrinkBill === ""){
-    estDrinkBill = prompt("How much money are you going to drop on drink? Please provide an answer.")
+    estDrinkBill = prompt("How much money is you desired main course? Please provide an answer.")
 }
 var drinkBill=parseInt(estDrinkBill)
 
@@ -33,6 +33,8 @@ var loopCounter
 
 for (loopCounter=estDinnerBill; loopCounter >100; loopCounter-=7)
     console.log(loopCounter);
+
+Fire a prompt to cut appetizer and if rejected automatically cut a drink.
 
 
 /*if (estDinnerBill<=dailyBudget){
