@@ -10,12 +10,19 @@ alert ("Your bonus is comprised of two elements, a quality score and a utilizati
 
 
 //Quality Score
-var qualityPrompt =  prompt("What is your overall quality score for the quarter?","0"); //User is prompted for their quarterly quality score
+var qualityPrompt =  prompt("What is your overall quality score for the quarter?"); //User is prompted for their quarterly quality score
+if (qualityPrompt === ""){
+    qualityPrompt = prompt("What is your overall quality score for the quarter? Do not leave blank.","0");
+}
 var quality = parseFloat(qualityPrompt); //The number from the prompt is returned with a decimal place if necessary, e.g. 9.2
 console.log(quality);
 
+
 //Utilization
-var utilPrompt =  prompt("What is your average utilization percentage for the quarter?","0"); //User selects class delivery length
+var utilPrompt =  prompt("What is your average utilization percentage for the quarter?"); //User selects class delivery length
+if (utilPrompt === ""){
+    utilPrompt = prompt("What is your overall quality score for the quarter? Do not leave blank");
+}
 var util = utilPrompt; //Return user selection as a number
 console.log(util);
 
