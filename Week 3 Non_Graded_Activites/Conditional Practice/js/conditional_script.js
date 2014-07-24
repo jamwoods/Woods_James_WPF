@@ -80,12 +80,16 @@ if (kidHeight>minHeight){
 
 //else if chain. Choosing between three blocks of code
 
-var kidHeight = 52;
+var estDinnerBill = prompt("How much money are you going to drop at dinner if you get everything you want?")
+console.log("estDinnerBill");
+var dailyBudget = prompt("What is your daily budget?")
+
+var dinnerBill = 52;
 var minHeight= 48;
 var wParentHeight=45;
 
-if (kidHeight>minHeight){
-    console.log("Hit the ride");
+if (dinnerBill>dailyBudget){
+    alert("Hit the ride");
 }else if(kidHeight>wParentHeight) {
     console.log("You can ride with a parent");
 }else{
