@@ -17,8 +17,12 @@
 
 
 
+var frontLeftStandard = 32;
+var frontRightStandard = 32;
+var rearLeftStandard = 40;
+var rearRightStandard = 40;
 
- var frontLeft = prompt("What is the pressure of your front left tire");////prompt to collect Username
+var frontLeft = prompt("What is the pressure of your front left tire");////prompt to collect Username
  console.log(frontLeft);
 
  var frontRight = prompt("What is the pressure of your front right tire");////prompt to collect Username
@@ -39,22 +43,10 @@ pressureArray[3] = rearRight;
 
 console.log(pressureArray);
 
+if (pressureArray[0]>=32 && pressureArray[1]>=32 && pressureArray[2]>=40 && pressureArray[3]>=40) {
+    alert("The tires pass spec!");
+}else
+    alert("Get your tires checked out!");
 
-/*
-var userName = prompt("Username");//prompt to collect Username
-console.log(userName);
 
-var passWord = prompt("Password");////prompt to collect Username
-console.log(passWord);
-
-if(userName!=="BossHog") {//Set alert if username is not recognized
-    alert("User not found, try again");
-}else if(userName=="BossHog" && passWord!=="RoscoPicoTrain") {//Set alert if username is recognized but password is incorrect
-    alert("Password does not match our records");
-}else{//Set welcome message containing to greet username when both username and password match
-    alert("Welcome" + " " + userName);
-}
-*/
-
-//Conditional Comparison Statement with Temp
 
