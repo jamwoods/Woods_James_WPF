@@ -19,34 +19,26 @@ var utilPrompt =  prompt("What is your average utilization percentage for the qu
 var util = utilPrompt; //Return user selection as a number
 console.log(util);
 
-/*
- */
-//Transit Time
-var locationPrompt =  prompt("Please input your destination as either W, MW or E","Select Location"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
-var locationCase = locationPrompt.toUpperCase();//Forcing to upper case to avoid user input variance.
-console.log(locationCase);
-if (locationCase == "W") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var locationTime = 2;} //2 hours transit
-if (locationCase == "MW")
-{var locationTime = 4;} //4 hours transit
-if (locationCase == "E")
-{var locationTime = 6;} //6 hours transit
-console.log(locationTime);
+if (quality < 7.0)
+    {var qPayout = 0};
+if (quality <= 8.0 && quality >=7.0)
+    {var qPayout = .8};
+if (quality < 9.0 && quality >8.0)
+    {var qPayout = .9};
+if (quality >= 9.0)
+    {var qPayout =1};
 
-//Preparation Time
-alert ("How prepared are you for class? We will factor in the number of times you have taught the class in order to determine prep time");
-var classExp =  prompt("Please enter the number of times you have taught this class.","0"); //Prompt box to to collect experience level
-var prep = parseInt(classExp); //Insure classExp is recognized as a number and deposited in the prep variable
-console.log(prep);
+console.log(qPayout);
 
-if (prep >= 0 && prep <= 3) //Assign a user selection to one of three categories, each of which imply there own prep time. This is the never to 3 times
-{var prepTime = 8;}
-if (prep >= 4 && prep <= 8)// The 4 to 8
-{var prepTime = 4;}
-if (prep >= 9) //The greater than 9
-{var prepTime = 1;}
-console.log(prepTime);
+if (util < 40)
+{var uPayout = 0};
+if (util <= 45 && util >=40)
+{var uPayout = .8};
+if (util < 50 && util >45)
+{var uPayout = .9};
+if (util >= 55)
+{var uPayout =1};
 
+console.log(uPayout);
 
-alert("Your total working hours for this week include" + " " +  (totalDeliveryHours) + " " +  "delivery hours," + " " + (locationTime) + " " + "travel hours," + " " + (prepTime) + " " +  "preparation hours, and finally" + " " + "one hour of post training work for a grand total of" + " " + (Number(totalDeliveryHours)+Number(locationTime)+Number(prepTime)+1) + " " + "hours");
-
+alert("Congratulations, you will be awarded" + " " + ((qPayout + uPayout)/2)*100+ "%"+ " " + "of your total bonus");
