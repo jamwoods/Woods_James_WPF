@@ -1,68 +1,73 @@
+
+
 /**
  * Created by James Woods
- * Origination Date 7/17/14.
- * Graded Assignment_Wacky
+ * Origination Date 7/24/14.
+ * Week 3 Graded Assignment_Conditionals_Wacky
  */
 
-//Scenerio
+var dinnerCostPrompt = prompt("How much are you going to splurge on dinner tonight?")//Collect cost of appetizers
+if (dinnerCostPrompt === ""){
+    dinnerCostPrompt = prompt("How much are you going to splurge on dinner tonight? Please provide and answer.");//Re-prompting if no value is not entered
+}
+var dinnerCost=parseInt(dinnerCostPrompt)//Return integer
 
-alert ("This is a space battle to the death. There are two offensive weapons, lasers and missiles. There are two defensive weapons, shields and anti-missile mini-guns.")
-
-//Player gets first move
-var initiativePrompt =  prompt("You are being approached by an enemy space Dreadnaught. You can either attack first or defend yourself.","Attack  or Defend"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
-var initiative = initiativePrompt.toUpperCase();
-console.log(initiative);
-
-//Player chooses asset
-var weaponPrompt =  prompt("Which asset did you deploy? Laser, Missile, Shield or AMM (ANTI-MISSILE MINI-GUN)"); //prompt to determine travel time. Underlying assumption is that the user is in Utah.
-console.log(weaponPrompt); //A more robust deployment would force values. Right now this is a free text field and could result in all manner of entries
-
-//Aliens Turn
-
-alert ("What did the enemy do?")
-
-var rand_no1 = Math.random(); //Random # generator to decide computers attack or defense stance. Two possible choices, 1 or 2
-rand_no1 = rand_no1 * 2;
-rand_no1 = Math.ceil(rand_no1);
+var flowerBouquet = prompt("Are you going to greet her with flowers at the door? If so what is the size of the bouquet, small, medium, large or no flowers?")//Collect cost of appetizers
+if (flowerBouquet === "") {
+    flowerBouquet = prompt("rAre you going to greet her with flowers at the door? If so what is the size of the bouquet, small, medium or large? Please provide and answer.");//Re-prompting if no value is not entered
+}
 
 
-if (rand_no1 == "1") //Need to translate the random # of the computer into their move choice. Two options, attack or defend.
-{var firstMove = "ALIEN Attack";}
-if (rand_no1 == "2")
-{var firstMove = "ALIEN Defend";}
-console.log(rand_no1);
-alert (firstMove)
+if (dinnerCost>140 || flowerBouquet=="large"){
+    alert("Second date assured");
+}else if(dinnerCost >100 && dinnerCost < 140 || flowerBouquet== "medium") {
+    console.log("You had better be real funny for a second");
+    alert("You had better be real funny if you want a second date");
+}else{
+    console.log("Queue your netflix account");
+    alert("Queue your netflix account");
+}
 
-if (firstMove == "ALIEN Attack") //If the computer attacks which weapon will it use? Another random roll
-{var rand_no2 = Math.random();
-    rand_no2 = rand_no2 * 2;
-    rand_no2 = Math.ceil(rand_no2);
-console.log(rand_no2);}
+/*
 
-if (rand_no2 == "1") //If the random # is 1 a laser is fired
-{var secondMove = "ALIEN Laser";}
+var dailyBudget = 100//Daily budget
+var appAvgCost = 7//Not needs now but reflect average cost of apps
+var drinkAvgCost = 7////Not needs now but reflect average cost of drink
+
+var estAppBill = prompt("How much money are your desired apps going to cost?")//Collect cost of appetizers
+if (estAppBill === ""){
+    estAppBill = prompt("How much money are your desired apps going to cost? Please provide and answer.");//Re-prompting if no value is not entered
+}
+var appBill=parseInt(estAppBill)//Return integer
+
+var estFoodBill = prompt("How much money is you desired main course?")//Collect cost of main course
+if (estFoodBill === ""){
+    estFoodBill = prompt("How much money is you desired main course? Please provide an answer.")//Re-prompting if no value is not entered
+}
+var foodBill=parseInt(estFoodBill)//Return integer
+
+var estDrinkBill = prompt("How much are you wanting to drop on drinks you lush?")//Collect cost of main course
+if (estDrinkBill === ""){
+    estDrinkBill = prompt("How much are you wanting to drop on drinks you lush? Please provide an answer.")//Re-prompting if no value is not entered
+}
+var drinkBill=parseInt(estDrinkBill)//Return integer
+
+var estDinnerBill= parseInt(appBill+foodBill+drinkBill);//Total estimated dinner bill
+
+console.log(estDinnerBill);
 
 
-if (rand_no2 == "2") //If the random # is 2 a Missile is fired
-{var secondMove = "ALIEN Missile";}
+if (estDinnerBill<=dailyBudget){//If under budget
+    alert("Bon Appetite and Cheers");
+}else if(estDinnerBill>dailyBudget) {//If over budget continue to drop an app or a drink until under budget
+    alert("Time to make some sacrifices");
 
+    var loopCounter
 
-if (firstMove == "ALIEN Defend") //The ability to input a letter is a convenience afforded to the user but we still need to translate those selection to actual travel time.
-{var rand_no2 = Math.random();
-    rand_no2 = rand_no2 * 2 + 2 ;//Needed to add the + 2 to move the random roll out by two.
-    rand_no2 = Math.ceil(rand_no2);
-console.log(rand_no2);}
+    for (loopCounter = estDinnerBill; loopCounter > 100; loopCounter -= 7)//Counter decrement original estimate by 7 until budget is reached
+        console.log(loopCounter);
 
-if (rand_no2 == "3")
-{var secondMove = "ALIEN Shield";}
-console.log(rand_no2)
-
-
-if (rand_no2 == "4")
-{var secondMove = "ALIEN Amm";}
-console.log(rand_no2)
-alert (secondMove)
-
-var battle=[initiativePrompt, firstMove, weaponPrompt, secondMove]//Collect all choices for battle report using array
-
-alert ("Battle Results:" + " " + battle.toString());// battle report
+    var totalLoops = parseInt(estDinnerBill - loopCounter) / 7//Calculation of total number of loops
+    console.log(totalLoops);
+    alert("You are going to need to cut" + " " + totalLoops + " " + "apps and/or drinks");}
+*/
