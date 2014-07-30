@@ -28,21 +28,21 @@ console.log(requestedDays);
 
 var formatPrompt =  prompt("Would you prefer an onsite, virtual or public delivery method?"); //User is prompted for their quarterly quality score
 if (formatPrompt === ""){
-    formatPrompt = prompt("Would you prefer an onsite, virtual or public delivery method? Do not leave blank.","0");//Re-prompting if no value is entered
+    formatPrompt = prompt("Would you prefer an onsite, virtual or public delivery method? Do not leave blank.");//Re-prompting if no value is entered
 }
-var method = (formatPrompt);
-console.log(formatPrompt);
 
-if(method = "onsite"){
-    var cost = "5300"
-}else if(method = "virtual"){
-    var cost = "4800"
+if(formatPrompt == "onsite"){
+    var cost =5300;
+
+}else if(formatPrompt == "virtual"){
+    var cost = 4800;
+
 }else{
-    var cost = "900"
-    console.log(cost);
+    var cost = 900;
+
 
 }
-
+console.log(cost);
 /*//The number `from the prompt is returned with a decimal place if necessary, e.g. 9.2
 
     if (dinnerCost>140 || flowerBouquet=="large"){//One of two conditions must be met in order to secure a second date
