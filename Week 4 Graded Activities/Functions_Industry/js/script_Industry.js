@@ -41,8 +41,8 @@ if(formatPrompt == "onsite"){
 console.log(cost);
 
 var discountPrompt =  prompt("do you have a discount code?"); //User is prompted for their quarterly quality score
-if (formatPrompt === ""){
-    formatPrompt = prompt("do you have a discount code? Do not leave blank.");//Re-prompting if no value is entered
+if (discountPrompt === ""){
+    discountPrompt = prompt("do you have a discount code? Do not leave blank.");//Re-prompting if no value is entered
 }
 
 if(discountPrompt == "dc10"){
@@ -54,12 +54,13 @@ if(discountPrompt == "dc10"){
 }
 console.log(discount);
 
-
-/*productDetails(6); //Arguments presumably to be supplied by visitor input
-function productDetail(c,){//function call with 1 parameter
-    var circumference = 3.14 * r*2;//output of the function
-    console.log("The circumference of the circle is" + " " + circumference);
+var training = productDetail(requestedDays,cost,discount); //Arguments presumably to be supplied by visitor input;
+function productDetail(requestedDays,cost,discount){//function call with 1 parameter
+    var net = requestedDays*cost-requestedDays*cost*discount;//output of the function
+    console.log("your total training cost will be $" + net);
 };
+
+/*
 //Hours worked in a week
 alert ("Let's see what percentage of your bonus you will be awarded this quarter.");
 alert ("Your bonus is comprised of two elements, a quality score and a utilization percentage.");
