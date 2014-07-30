@@ -25,20 +25,32 @@ if (weight === ""){
     weight = prompt("How much does Bella weight? Do not leave blank.","0");//Re-prompting if no value is entered
 }
 
-var dogFood= function(weight,serving){
+var serving =  prompt("How many cups do you feed Bella a day?"); //User is prompted for weight of the dog
+if (serving === ""){
+    serving = prompt("How many cups do you feed Bella a day? Do not leave blank.","0");//Re-prompting if no value is entered
+}
+
+var dogFood = function(weight,serving){
     if(weight >= 40){
-        var serving = (1-1*.25);//10% off list
-    }else if(weight >=35 || weight<=39) {
-        var serving = (1);//20% off list
-    }else if(weight < 35 ) {
-        var serving = (1 + 1*.25);//20% off list
+        var properFeeding = 1-1*.25;//10% off list
+
+    }else if(weight >=32 || weight<=39) {
+        var properFeeding = 1;//20% off list
+
+    }else if(weight < 32 || weight>=27 ) {
+        var properFeeding = 1 + 1*.25;//20% off list
+
     }else{
         alert("Take your dog to the vet!")
+
+        console.log("I should be feeding Bella" + properFeeding + "cups a day");
     }
 
 }
-
 dogFood();
+
+//dogFood(weight,serving);
+//console.log(properFeeding);
 
 
 /*var calcArea= function(width, height){
