@@ -47,17 +47,17 @@ if (discountPrompt === ""){
 
 if(discountPrompt == "dc10"){
     var discount = .10;
-}else if(discountPrompt == "dc20"){
+}else if(discountPrompt == "dc20") {
     var discount = .20;
 }else{
-    var discount = 1;
+    var discount = 0;
 }
 console.log(discount);
 
 var training = productDetail(requestedDays,cost,discount); //Arguments presumably to be supplied by visitor input;
 function productDetail(requestedDays,cost,discount){//function call with 1 parameter
     var net = requestedDays*cost-requestedDays*cost*discount;//output of the function
-    console.log("Your total training cost will be $" + net.);
+    console.log("Your total training cost will be $" + net + ".");
 };
 
 productDetail(requestedDays,cost,discount);
