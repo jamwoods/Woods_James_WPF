@@ -4,6 +4,37 @@
  * Week 4 ScreenCast Practice
  */
 
+
+//Loop Notes
+
+//While Loops
+var b = 10;
+while (b>0) {
+    console.log(b);
+}//This is a bad while loop because it is infinite. Fix below
+
+var b = 10;//This will give us a countdown.  This sets up the index
+while (b>0) {//This block checks the condition
+    console.log(b + 'kegs on the wall');
+    b--;//increments or decrements the index
+}
+
+//Do While Loop
+
+var c = 10;
+do {
+    console.log(c + 'kegs on the wall');
+    c--
+}
+while (c>0);//kind of funky. The check to see if the loop should be run occurs after the running of the loop
+
+//For Loop-the shorthand version of the loop. All the loops put together into a nice package, does everthing in one line
+
+for (var i= 10; i > 0; i--) {
+    console.log(i + 'kegs on the wall')
+
+}
+
 //Reusable-Function
 
 //Functions Store stuff, specifically lines of code as opposed to variables that store values. Think of them like factories.

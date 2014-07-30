@@ -26,28 +26,38 @@
       <file leaf-file-name="screencast_functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Screencast_Functions/js/screencast_functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="84" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions_worksheet.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions_worksheet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/js/functions_worksheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33287102" vertical-offset="0" max-vertical-offset="721">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/index.html">
+      <file leaf-file-name="script_Industry.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/js/script_Industry.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.062413316" vertical-offset="0" max-vertical-offset="870">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -82,9 +92,11 @@
         <option value="$PROJECT_DIR$/../../../Week 3 Graded_Activities/Conditionals_Wacky/index.html" />
         <option value="$PROJECT_DIR$/../../../Week 3 Graded_Activities/Conditionals_Wacky/js/script_Wacky.js" />
         <option value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Screencast_Functions/index.html" />
-        <option value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Screencast_Functions/js/screencast_functions.js" />
         <option value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/index.html" />
         <option value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/js/functions_worksheet.js" />
+        <option value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Screencast_Functions/js/screencast_functions.js" />
+        <option value="$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/js/script_Industry.js" />
+        <option value="$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/index.html" />
       </list>
     </option>
   </component>
@@ -144,7 +156,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
@@ -423,15 +435,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Screencast_Functions/js/screencast_functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="84" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1860">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
+        <state vertical-scroll-proportion="0.19368723" vertical-offset="0" max-vertical-offset="697">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
@@ -439,8 +451,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Week 4 Non Graded Activites/Functions_worksheet/js/functions_worksheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33287102" vertical-offset="0" max-vertical-offset="721">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Week 4 Graded Activities/Functions_Industry/js/script_Industry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.062413316" vertical-offset="0" max-vertical-offset="870">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding />
         </state>
       </provider>
