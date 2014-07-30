@@ -57,9 +57,10 @@ console.log(discount);
 var training = productDetail(requestedDays,cost,discount); //Arguments presumably to be supplied by visitor input;
 function productDetail(requestedDays,cost,discount){//function call with 1 parameter
     var net = requestedDays*cost-requestedDays*cost*discount;//output of the function
-    console.log("your total training cost will be $" + net);
+    console.log("Your total training cost will be $" + net.);
 };
 
+productDetail(requestedDays,cost,discount);
 /*
 //Hours worked in a week
 alert ("Let's see what percentage of your bonus you will be awarded this quarter.");
