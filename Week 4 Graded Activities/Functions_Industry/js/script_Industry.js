@@ -33,28 +33,28 @@ if (formatPrompt === ""){
 
 if(formatPrompt == "onsite"){
     var cost =5300;
-
 }else if(formatPrompt == "virtual"){
     var cost = 4800;
-
 }else{
     var cost = 900;
-
-
 }
 console.log(cost);
-/*//The number `from the prompt is returned with a decimal place if necessary, e.g. 9.2
 
-    if (dinnerCost>140 || flowerBouquet=="large"){//One of two conditions must be met in order to secure a second date
-        alert("Second date assured");
-    }else if(dinnerCost >100 && dinnerCost < 140 || flowerBouquet== "medium") {//If the above is not met all hope is not lost
-        console.log("You had better be real funny for a second");
-        alert("You had better be real funny if you want a second date");
-    }else{
-        console.log("Queue your Netflix account");//All hope is lost
-        alert("Queue your Netflix account");
-    }
-*/
+var discountPrompt =  prompt("do you have a discount code?"); //User is prompted for their quarterly quality score
+if (formatPrompt === ""){
+    formatPrompt = prompt("do you have a discount code? Do not leave blank.");//Re-prompting if no value is entered
+}
+
+if(discountPrompt == "dc10"){
+    var discount = .10;
+}else if(discountPrompt == "dc20"){
+    var discount = .20;
+}else{
+    var discount = 1;
+}
+console.log(discount);
+
+
 /*productDetails(6); //Arguments presumably to be supplied by visitor input
 function productDetail(c,){//function call with 1 parameter
     var circumference = 3.14 * r*2;//output of the function
