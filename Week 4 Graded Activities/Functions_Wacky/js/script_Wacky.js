@@ -5,138 +5,37 @@
  */
 
 
-//How far can you get on table scraps when fueling your flux capacitor
-//1 banana peel = 3 apple cores
-//a handful of bread crust = 1 banana peel
-//A filter of coffee grounds = 1 apple core
+//How far can you get on table scraps when fueling the flux capacitor of your Delorean
+//1 banana peel = 3 energy units
+//a handful of bread crust = 2 energy units
+//A filter of coffee grounds = 4 energy unit
+//An apple core = 1 energy unit
+//one unit of energy allows you to travel 100 miles
 
 
-var trash = ["bannana peel, apple core, coffee grounds"];
+var trash = ["bananna peel, apple core, coffee grounds"];
 
-alert("You have just a garbage cash composed of a" + " " + trash[0] + "," + trash[1] + "and" + " " + trash[2]);
+alert("You have just discovered a garbage cache composed of the following items:" + " " + trash[0]+".");
+alert("You are 500 miles away from your destination. Will you make it?");
 
-/**
+var bananna = 3;
+var bread = 2;
+var coffee = 4;
+var apple=1;
 
-fluxFuel(trash);//function call pulling data from user inputs
-function fluxFuel(trash){//function call with 3 parameters.
+var energy = bananna + apple + coffee
+console.log(energy)
 
-    onLineAccount = (dates>5) ?
-    var net = requestedDays*cost-requestedDays*cost*discount;//output of the function. Calculation takes into account cost per day and discount if any.
-    console.log("Your total training cost will be $" + net + ".");
+
+fluxFuel(energy);//function call pulling data from user inputs
+function fluxFuel(energy){//function call with 3 parameters.
+
+    var distance = energy * 100>5 ? "You made it!" : "You are only going to be able to reach the" + " " + distance + " " + "mark, better look for some more garbage";
+    console.log(distance);
+    alert(distance)
 };
 
-var requestedDaysPrompt =  prompt("How many days of training would you like?"); //User is prompted for the number of training days they would like
-if (requestedDaysPrompt === ""){
-    requestedDaysPrompt = prompt("How many days of training would you like? Do not leave blank.","0");//Re-prompting if no value is entered
-}
-var requestedDays = (requestedDaysPrompt); //In case we run into people who are requesting partial days. If so add float here.
-console.log(requestedDays);
-
-var formatPrompt =  prompt("Would you prefer an onsite, virtual or public delivery method?"); //User is prompted for their delivery method
-if (formatPrompt === ""){
-    formatPrompt = prompt("Would you prefer an onsite, virtual or public delivery method? Do not leave blank.");//Re-prompting if no value is entered
-}
-
-if(formatPrompt == "onsite"){f
-    var cost =5300;//Standard cost for onsite per day
-}else if(formatPrompt == "virtual"){
-    var cost = 4800;//Standard cost for virtual per day
-}else{
-    var cost = 900;//Standard cost for public per day, the only remaining option.
-}
-console.log(cost);
-
-var discountPrompt =  prompt("do you have a discount code?"); //User is prompted for their discount code if applicable. Only accounting for two codes, dc10 and dc20
-if (discountPrompt === ""){
-    discountPrompt = prompt("do you have a discount code? Do not leave blank.");//Re-prompting if no value is entered
-}
-
-if(discountPrompt == "dc10"){
-    var discount = .10;//10% off list
-}else if(discountPrompt == "dc20") {
-    var discount = .20;//20% off list
-}else{
-    var discount = 0;
-}
-console.log(discount);
-
-productDetail(requestedDays,cost,discount);//function call pulling data from user inputs
-function productDetail(requestedDays,cost,discount){//function call with 3 parameters.
-    var net = requestedDays*cost-requestedDays*cost*discount;//output of the function. Calculation takes into account cost per day and discount if any.
-    console.log("Your total training cost will be $" + net + ".");
-};
-
-productDetail(5,900,.10);//Second booking with different values. Called the function twice to test.
-
-
-var weight =  prompt("How much does Bella weight?"); //User is prompted for weight of the dog
-if (weight === ""){
-    weight = prompt("How much does Bella weight? Do not leave blank.");//Re-prompting if no value is entered
-}
-console.log(weight)
-var cups =  prompt("How many cups do you feed Bella a day?"); //User is prompted for current cup count
-if (cups === ""){
-    cups = prompt("How many cups do you feed Bella a day? Do not leave blank.");//Re-prompting if no value is entered
-}
-console.log(cups)
-
-var dogFood = function(weight,cups){
-//Code the function runs
-    if(weight >= 40){
-        var properFeeding = cups - cups * .25;//Increase amount by 25%
-        alert("You should be feeding Bella" + " " + properFeeding + " " + "cups a day");
-    }else if(weight <=39 && weight>=32) {//If on target weight cup count remains the same
-        var properFeeding = cups;//Maintain current levels
-        alert("You should be feeding Bella" + " " + properFeeding + " " +  "cups a day");
-    }else if(weight <32 && weight>=28) {//If under weight cup count is reduced
-        var properFeeding = (cups + cups * .25)/10;//reduce amount by 25%
-        alert("You should be feeding Bella" + " " + properFeeding + " " +  "cups a day");
-    }else{
-        alert("Take your dog to the vet!")//If drastically under weight see the vet.
-
-    }
-
-}
-
-dogFood(weight,cups);//Invoking the function
 
 
 
 
-
-//Second date or not
-var dinnerCostPrompt = prompt("How much are you going to splurge on dinner tonight?")//How much are you going to spend on dinner
-if (dinnerCostPrompt === ""){
-    dinnerCostPrompt = prompt("How much are you going to splurge on dinner tonight? Please provide and answer.");//Re-prompting if no value is not entered
-}
-var dinnerCost=parseInt(dinnerCostPrompt)//Return integer
-
-var flowerBouquet = prompt("Are you going to greet her with flowers at the door? If so what is the size of the bouquet, small, medium, large or no flowers?")//Flowers too?
-if (flowerBouquet === "") {
-    flowerBouquet = prompt("Are you going to greet her with flowers at the door? If so what is the size of the bouquet, small, medium or large? Please provide and answer.");//Re-prompting if no value is not entered
-}
-
-if (dinnerCost>140 || flowerBouquet=="large"){//One of two conditions must be met in order to secure a second date
-    alert("Second date assured");
-}else if(dinnerCost >100 && dinnerCost < 140 || flowerBouquet== "medium") {//If the above is not met all hope is not lost
-    console.log("You had better be real funny for a second");
-    alert("You had better be real funny if you want a second date");
-}else{
-    console.log("Queue your Netflix account");//All hope is lost
-    alert("Queue your Netflix account");
-}
-
-//What happens after the second the date
-
-var dates = prompt("How any dates have you had with this girl?")//How many dates have been locked with a single woman
-if (dates === "") {
-    dates = prompt("How any dates have you had with this girl? Please provide and answer.");//Re-prompting if no value is not entered
-}
-
-onLineAccount = (dates>5) ? "Time to close your online account" : "Time for more online trolling"//If you haven't broken the 5 barrier keep your options open, else close your online account
-
-console.log(dates);
-alert(onLineAccount)
-
-
-*/
