@@ -5,8 +5,25 @@
  */
 
 
-//Calculating correct food quantity for Bella
+//How far can you get on table scraps when fueling your flux capacitor
+//1 banana peel = 3 apple cores
+//a handful of bread crust = 1 banana peel
+//A filter of coffee grounds = 1 apple core
 
+
+var trash = ["bannana peel, apple core, coffee grounds"];
+
+alert("You have just a garbage cash composed of a" + " " + trash[0] + "," + trash[1] + "and" + " " + trash[2]);
+
+/**
+
+fluxFuel(trash);//function call pulling data from user inputs
+function fluxFuel(trash){//function call with 3 parameters.
+
+    onLineAccount = (dates>5) ?
+    var net = requestedDays*cost-requestedDays*cost*discount;//output of the function. Calculation takes into account cost per day and discount if any.
+    console.log("Your total training cost will be $" + net + ".");
+};
 
 var requestedDaysPrompt =  prompt("How many days of training would you like?"); //User is prompted for the number of training days they would like
 if (requestedDaysPrompt === ""){
@@ -122,3 +139,4 @@ console.log(dates);
 alert(onLineAccount)
 
 
+*/
