@@ -31,37 +31,21 @@ if (cups === ""){
 console.log(cups)
 
  var dogFood = function(weight,cups){
-
- if(weight >= "40"){
+//Code the function runs
+ if(weight >= 40){
  var properFeeding = cups - cups * .25;//10% off list
-     console.log(properFeeding)
- }else if(weight >="32" || weight<="39") {
- var properFeeding = cups;//20% off list
-     console.log(properFeeding)
- }else if(weight > "27" || weight<= "32" ) {
- var properFeeding = cups + cups * .25;//20% off list
-     console.log(properFeeding)
+     console.log(properFeeding);
+ }else if(weight <=39 && weight>=32) {
+    var properFeeding = cups;//20% off list
+     console.log(properFeeding);
+ }else if(weight <32 && weight>=28) {
+    var properFeeding = cups + cups * .25;//20% off list
+     console.log(properFeeding);
  }else{
- alert("Take your dog to the vet!")
-
- //console.log(properFeeding);
+    alert("Take your dog to the vet!")
  }
 
  }
 
- dogFood(weight,cups);
-// var trueCups=dogFood(weight,cups);
+dogFood(weight,cups);
 
- //console.log(trueCups);
-
-
-
- /*var calcArea= function(width, height){
- var area =width * height;
- return area;
- }
-
- calcArea(20,30);
-
-
- */
