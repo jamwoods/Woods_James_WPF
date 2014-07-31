@@ -22,13 +22,13 @@ console.log(cups)
  var dogFood = function(weight,cups){
 //Code the function runs
  if(weight >= 40){
- var properFeeding = cups - cups * .25;//10% off list//If overweight need to reduce cup count
+ var properFeeding = cups - cups * .25;//Increase amount by 25%
      alert("You should be feeding Bella" + " " + properFeeding + " " + "cups a day");
  }else if(weight <=39 && weight>=32) {//If on target weight cup count remains the same
-    var properFeeding = cups;//20% off list
+    var properFeeding = cups;//Maintain current levels
      alert("You should be feeding Bella" + " " + properFeeding + " " +  "cups a day");
  }else if(weight <32 && weight>=28) {//If under weight cup count is reduced
-    var properFeeding = cups + cups * .25;//20% off list
+    var properFeeding = (cups + cups * .25)/10;//reduce amount by 25%
      alert("You should be feeding Bella" + " " + properFeeding + " " +  "cups a day");
  }else{
     alert("Take your dog to the vet!")//If drastically under weight see the vet.

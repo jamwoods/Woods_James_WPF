@@ -5,18 +5,7 @@
  */
 
 
-/*Use a function as part of your code in each sub-project. This function should have at least two parameters and return a value.
 
-
-    Each of the following requirements must exist in at least one of the 3 subprojects:
-    A ternary
-
-    An anonymous function
-    A normal "named" function
-    An expression with two arithmetic operators
-
-    At least one logical operator
-*/
 //Calculating total cost for training delivery
 
 var requestedDaysPrompt =  prompt("How many days of training would you like?"); //User is prompted for the number of training days they would like
