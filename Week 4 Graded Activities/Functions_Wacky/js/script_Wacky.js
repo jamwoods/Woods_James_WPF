@@ -1,7 +1,7 @@
 /**
  * Created by James Woods
  * Origination Date 7/30/14.
- * Graded Assignment_Functions_Personal
+ * Graded Assignment_Functions_Wacky
  */
 
 
@@ -13,29 +13,31 @@
 //one unit of energy allows you to travel 100 miles
 
 
-var trash = ["bananna peel, apple core, coffee grounds"];
+var trash = ["bananna peel, apple core, coffee grounds"];//Array of random trash components found
 
 alert("You have just discovered a garbage cache composed of the following items:" + " " + trash[0]+".");
 alert("You are 500 miles away from your destination. Will you make it?");
 
-var bananna = 3;
-var bread = 2;
-var coffee = 4;
-var apple=1;
+var bananna = 2;
+var bread = 1;
+var coffee = 3;
+var apple= 1;
 
-var energy = bananna + apple + coffee
+var energy = bananna + apple + coffee//Adding up the energy values of each piece of trash
 console.log(energy)
 
 
-fluxFuel(energy);//function call pulling data from user inputs
-function fluxFuel(energy){//function call with 3 parameters.
+fluxFuel(energy);//one argument
+function fluxFuel(energy){//function call with 1 parameter
 
-    var distance = energy * 100>5 ? "You made it!" : "You are only going to be able to reach the" + " " + distance + " " + "mark, better look for some more garbage";
+    var distance = energy * 100/conversion of energy into distance
     console.log(distance);
+    var destination = energy * 100 > 500 ? "You made it!" : "You are only going to be able to clear" + " " + distance + " " + "miles, better look for some more garbage";//check to see if you can make it
+    console.log(destination);
     alert(distance)
 };
 
-
+fluxFuel(6);//test with different mileage
 
 
 
