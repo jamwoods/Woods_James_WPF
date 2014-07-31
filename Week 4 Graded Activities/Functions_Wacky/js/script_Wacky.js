@@ -18,10 +18,10 @@ var trash = ["bananna peel, apple core, coffee grounds"];//Array of random trash
 alert("You have just discovered a garbage cache composed of the following items:" + " " + trash[0]+".");
 alert("You are 500 miles away from your destination. Will you make it?");
 
-var bananna = 2;
-var bread = 1;
-var coffee = 3;
-var apple= 1;
+var bananna = 2;//designated energy values for bananna
+var bread = 1;//designated energy values for bread
+var coffee = 3;//designated energy values for coffee
+var apple= 1;//designated energy values for apple
 
 var energy = bananna + apple + coffee//Adding up the energy values of each piece of trash
 console.log(energy)
@@ -30,14 +30,14 @@ console.log(energy)
 fluxFuel(energy);//one argument
 function fluxFuel(energy){//function call with 1 parameter
 
-    var distance = energy * 100/conversion of energy into distance
+    var distance = energy * 100//conversion of energy into distance
     console.log(distance);
     var destination = energy * 100 > 500 ? "You made it!" : "You are only going to be able to clear" + " " + distance + " " + "miles, better look for some more garbage";//check to see if you can make it
     console.log(destination);
     alert(distance)
 };
 
-fluxFuel(6);//test with different mileage
+fluxFuel(2);//test with different mileage
 
 
 
