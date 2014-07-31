@@ -1,7 +1,7 @@
 /**
  * Created by James Woods
  * Origination Date 7/29/14.
- * Graded Assignment_Functions_Industry
+ * Week 4_Graded Assignment_Functions_Industry
  */
 
 
@@ -20,7 +20,7 @@ if (formatPrompt === ""){
     formatPrompt = prompt("Would you prefer an onsite, virtual or public delivery method? Do not leave blank.");//Re-prompting if no value is entered
 }
 
-if(formatPrompt == "onsite"){f
+if(formatPrompt == "onsite"){
     var cost =5300;//Standard cost for onsite per day
 }else if(formatPrompt == "virtual"){
     var cost = 4800;//Standard cost for virtual per day
