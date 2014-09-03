@@ -6,7 +6,7 @@
 
 
 
-//Calculating total cost for training delivery
+//Calculating total cost for training delivery. Ad some more
 
 var requestedDaysPrompt =  prompt("How many days of training would you like?"); //User is prompted for the number of training days they would like
 if (requestedDaysPrompt === ""){
